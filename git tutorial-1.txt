@@ -1,0 +1,275 @@
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git
+$ git init
+Initialized empty Git repository in C:/Users/BHARGAV/Downloads/git/.git/
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git config user.name "bargav"
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git config user.email "matsabhargav@gmail.com"
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git add first.txt
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git commit -m "1st version in bargav branch"
+[master (root-commit) bf8c98a] 1st version in bargav branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git log
+commit bf8c98a4a4a4d1d4cbc3e2580a5f1eca2444d483 (HEAD -> master)
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:31:31 2024 +0530
+
+    1st version in bargav branch
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git add .
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first.txt
+
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git commit -m "2nd version by bargav"
+[master e2c748b] 2nd version by bargav
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git log
+commit e2c748b2cdf587b6d44476706ca10ede89374cb9 (HEAD -> master)
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:38:30 2024 +0530
+
+    2nd version by bargav
+
+commit bf8c98a4a4a4d1d4cbc3e2580a5f1eca2444d483
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:31:31 2024 +0530
+
+    1st version in bargav branch
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git add .
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git commit -m "3rd version by bargav"
+On branch master
+nothing to commit, working tree clean
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git add .
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first.txt
+
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git commit -m "3rd version by bargav"
+[master d11064d] 3rd version by bargav
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git log
+commit d11064da5a0c61cee74c73e7d0ed784e5758b2af (HEAD -> master)
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:51:31 2024 +0530
+
+    3rd version by bargav
+
+commit e2c748b2cdf587b6d44476706ca10ede89374cb9
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:38:30 2024 +0530
+
+    2nd version by bargav
+
+commit bf8c98a4a4a4d1d4cbc3e2580a5f1eca2444d483
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:31:31 2024 +0530
+
+    1st version in bargav branch
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git add .
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git commit -m "4th version by bargav"
+[master 9cf2928] 4th version by bargav
+ 1 file changed, 2 insertions(+)
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git checkout ^C
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git checkout ^C
+error: pathspec '?' did not match any file(s) known to git
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git checkout e2c748b2cdf587b6d44476706ca10ede89374cb9
+Note: switching to 'e2c748b2cdf587b6d44476706ca10ede89374cb9'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e2c748b 2nd version by bargav
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git ((e2c748b...))
+$ git checkout e2c748b2cdf587b6d44476706ca10ede89374cb9
+HEAD is now at e2c748b 2nd version by bargav
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git ((e2c748b...))
+$ git log
+commit e2c748b2cdf587b6d44476706ca10ede89374cb9 (HEAD)
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:38:30 2024 +0530
+
+    2nd version by bargav
+
+commit bf8c98a4a4a4d1d4cbc3e2580a5f1eca2444d483
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:31:31 2024 +0530
+
+    1st version in bargav branch
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git ((e2c748b...))
+$ git checkout e2c748b2cdf587b6d44476706ca10ede89374cb9
+HEAD is now at e2c748b 2nd version by bargav
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git ((e2c748b...))
+$ git checkout master
+Previous HEAD position was e2c748b 2nd version by bargav
+Switched to branch 'master'
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git log
+commit 9cf2928044efbc03a9d034d0cc0828881231121a (HEAD -> master)
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:59:33 2024 +0530
+
+    4th version by bargav
+
+commit d11064da5a0c61cee74c73e7d0ed784e5758b2af
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:51:31 2024 +0530
+
+    3rd version by bargav
+
+commit e2c748b2cdf587b6d44476706ca10ede89374cb9
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:38:30 2024 +0530
+
+    2nd version by bargav
+
+commit bf8c98a4a4a4d1d4cbc3e2580a5f1eca2444d483
+Author: bargav <matsabhargav@gmail.com>
+Date:   Sat Mar 9 18:31:31 2024 +0530
+
+    1st version in bargav branch
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git remote add origin https://github.com/BHARGAV14312/git
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git checkout master
+Already on 'master'
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git push origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (12/12), 989 bytes | 494.00 KiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/BHARGAV14312/git
+ * [new branch]      master -> master
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git remote -v
+origin  https://github.com/BHARGAV14312/git (fetch)
+origin  https://github.com/BHARGAV14312/git (push)
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$ git push origin master
+Everything up-to-date
+
+BHARGAV@LAPTOP-KPSUBVQU MINGW64 ~/Downloads/git (master)
+$
